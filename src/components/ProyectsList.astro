@@ -47,10 +47,10 @@ const PROYECTOS = [
 ]
 ---
 
-<div class="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1">
+<div class="flex-col">
   {
     PROYECTOS.map(proyecto => (
-      <div class="ms-4 mb-10">
+      <div class="mb-10">
         <TarjetProject
           id={proyecto.id}
           nombre={proyecto.nombre}
