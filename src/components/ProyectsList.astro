@@ -1,0 +1,66 @@
+---
+import TarjetProject from './TarjetProject.astro'
+
+const PROYECTOS = [
+  {
+    id: 1,
+    nombre: 'WineClub',
+    descripcion:
+      'Aplicación web de fidelización para bodegas y clientes de Mendoza. Permite gestionar usuarios, canje de puntos, cupones y productos. Incluye panel de administración, autenticación con JWT y diseño responsive.',
+    tecnologias: [
+      'React',
+      'Vite',
+      'Material UI',
+      'Node.js',
+      'NestJS',
+      'MongoDB',
+      'Mongoose',
+      'Axios',
+    ],
+    imagen: ['/Mawys-project/mawys-browser-home-dark.png'],
+    enlace: 'https://wineclub.example.com', // reemplazá con tu enlace real
+    repositorio: 'https://github.com/tuusuario/wineclub',
+    color: '#B90036',
+  },
+  {
+    id: 2,
+    nombre: 'Feria Maipu',
+    descripcion:
+      'E-commerce desarrollado con Next.js orientado a performance y SEO. Incluye catálogo de productos, carrito, pasarela de pagos simulada y panel de administración para gestionar inventario.',
+    tecnologias: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'MongoDB'],
+    imagen: ['/images/tiendanext-preview.webp'],
+    enlace: 'https://tiendanext.example.com',
+    repositorio: 'https://github.com/tuusuario/tiendanext',
+    color: '#111827',
+  },
+  {
+    id: 3,
+    nombre: 'Mawy’s Galletitas dulces',
+    descripcion:
+      'Landing page moderna y responsiva para la marca Mawy’s, enfocada en estética limpia y carga rápida. Incluye animaciones suaves, formulario de contacto y optimización para dispositivos móviles.',
+    tecnologias: ['Astro', 'Tailwind CSS', 'JavaScript'],
+    imagen: ['/Mawys-project/mawys-browser-home-dark.png'],
+    enlace: 'https://mawys.example.com',
+    repositorio: 'https://github.com/tuusuario/mawys-landing',
+    color: '#F472B6',
+  },
+]
+---
+
+<div class="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1">
+  {
+    PROYECTOS.map(proyecto => (
+      <div class="ms-4 mb-10">
+        <TarjetProject
+          id={proyecto.id}
+          nombre={proyecto.nombre}
+          descripcion={proyecto.descripcion}
+          imagen={proyecto.imagen}
+          enlace={proyecto.enlace}
+          repositorio={proyecto.repositorio}
+          color={proyecto.color}
+        />
+      </div>
+    ))
+  }
+</div>
