@@ -2,52 +2,51 @@
 import TarjetSkills from '../components/TarjetSkills.astro'
 ---
 
-<div class="z-10 flex w-full flex-col space-y-8 md:gap-10">
-  <div class="flex flex-col gap-4">
-    <h2 class="mb-4 text-3xl font-semibold">
-      Mis <span class="text-teal-500 dark:text-blue-400">Habilidades</span>
-    </h2>
-    <p class="text-lg">Tecnologías y herramientas que domino para crear soluciones completas</p>
-  </div>
+<div class="flex flex-col gap-4">
+  <h2 class="mb-4 text-3xl font-semibold">
+    Mis <span class="text-teal-500 dark:text-blue-400">Habilidades</span>
+  </h2>
+  <p class="text-lg">Tecnologías y herramientas que domino para crear soluciones completas</p>
+</div>
 
-  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1">
-    <TarjetSkills
-      arraySkils={[
-        'React',
-        'Next.js',
-        'Vite',
-        'Angular',
-        'Astro',
-        'TypeScript',
-        'Tailwind',
-        'CSS',
-        'HTML5',
-        'CSS3',
-      ]}
-      nameTarjet="FrontEnd"
-    />
-    <TarjetSkills
-      arraySkils={[
-        'Node.js',
-        'Express',
-        'NestJS',
-        'MongoDB',
-        'SQL',
-        'API REST',
-        'JWT',
-        'TypeORM',
-        'Python',
-      ]}
-      nameTarjet="BackEnd"
-    />
-    <TarjetSkills
-      arraySkils={['Git', 'Docker', 'AWS', 'Figma', 'Jira', 'VPS', 'Scrum', 'Agile']}
-      nameTarjet="Tools"
-    />
-  </div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-1">
+  <TarjetSkills
+    arraySkils={[
+      'React',
+      'Next.js',
+      'Vite',
+      'Angular',
+      'Astro',
+      'TypeScript',
+      'Tailwind',
+      'CSS',
+      'HTML5',
+      'CSS3',
+    ]}
+    nameTarjet="FrontEnd"
+  />
+  <TarjetSkills
+    arraySkils={[
+      'Node.js',
+      'Express',
+      'NestJS',
+      'MongoDB',
+      'SQL',
+      'API REST',
+      'JWT',
+      'TypeORM',
+      'Python',
+    ]}
+    nameTarjet="BackEnd"
+  />
+  <TarjetSkills
+    arraySkils={['Git', 'Docker', 'AWS', 'Figma', 'Jira', 'VPS', 'Scrum', 'Agile']}
+    nameTarjet="Tools"
+  />
+</div>
 
-  {/* Experience Level Indicators */}
-  <!-- <div class="mt-8 hidden grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-3">
+{/* Experience Level Indicators */}
+<!-- <div class="mt-8 hidden grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-3">
     <div class="text-center">
       <div class="mb-2 text-4xl font-bold text-teal-500 md:text-5xl lg:text-6xl dark:text-blue-400">
         3+
@@ -73,4 +72,3 @@ import TarjetSkills from '../components/TarjetSkills.astro'
       </p>
     </div>
   </div> -->
-</div>
